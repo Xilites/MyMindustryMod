@@ -6,13 +6,14 @@ import mindustry.game.Objectives;
 import mindustry.type.Planet;
 
 public class ModPlanet {
-    public static Planet OldWorldSector;
+    public static Planet OldWorld;
     public static void load(){
-        OldWorldSector = new Planet("OldWorld",Planets.sun,10){
+        OldWorld = new Planet("OldWorld",Planets.erekir,10,10){
             {
-
+                accessible = true;
+                allowLaunchToNumbered = true;
+                visible = true;
             }
         };
-//        Seq<Objectives> OldWorldSector = Seq.with(new Objectives.OnPlanet(Planets.));
     }
 }
