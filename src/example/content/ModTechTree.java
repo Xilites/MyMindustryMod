@@ -3,12 +3,17 @@ package example.content;
 import arc.struct.Seq;
 import mindustry.content.Planets;
 import mindustry.game.Objectives;
+import static example.content.ModBlocks.*;
+import static mindustry.content.SectorPresets.craters;
+import static mindustry.content.SectorPresets.*;
+import static mindustry.content.TechTree.*;
+import static mindustry.content.UnitTypes.*;
 
 import static mindustry.content.TechTree.*;
 
 public class ModTechTree {
     public static void load(){
-        ModPlanet.OldWorld.techTree = nodeRoot("OldWorld",ModBlocks.Old_World_Core,() -> {
+        ModPlanet.OldWorld.techTree = nodeRoot("OldWorld",Old_World_Core,() -> {
             node(ModBlocks.Old_World_Launch_Pad,() -> {
 
             });

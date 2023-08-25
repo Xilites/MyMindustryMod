@@ -1,6 +1,7 @@
 package example.content;
 
 import mindustry.content.Items;
+import mindustry.ctype.Content;
 import mindustry.type.Category;
 import mindustry.world.Block;
 import mindustry.world.blocks.campaign.LaunchPad;
