@@ -18,7 +18,6 @@ public class ModPlanet {
                 radius = 0.5F;
                 alwaysUnlocked = true;
                 icon = "old_world_LaunchPad.png";
-                meshLoader = () -> new HexMesh(this,5);
             }
         };
     }

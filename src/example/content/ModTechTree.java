@@ -13,7 +13,7 @@ import static mindustry.content.TechTree.*;
 
 public class ModTechTree {
     public static void load(){
-        ModPlanet.OldWorld.techTree = nodeRoot("OldWorld",Old_World_Core,() -> {
+        Planets.erekir.techTree = nodeRoot("OldWorld",Old_World_Core,() -> {
             node(Old_World_Launch_Pad);
         });
     }
