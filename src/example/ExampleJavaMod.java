@@ -2,15 +2,10 @@ package example;
 
 import arc.*;
 import arc.util.*;
-import example.content.ModItem;
 import example.content.ModPlanet;
-import mindustry.*;
-import mindustry.content.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
-import mindustry.type.Item;
-import mindustry.type.Planet;
 import mindustry.ui.dialogs.*;
 
 public class ExampleJavaMod extends Mod{
@@ -34,8 +29,8 @@ public class ExampleJavaMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example example.content.");
-        ModItem.load();
         ModPlanet.load();
+
     }
 
 }
