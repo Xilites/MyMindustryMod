@@ -1,8 +1,6 @@
-package content;
+package example.content;
 
-import arc.struct.Seq;
 import mindustry.content.Planets;
-import mindustry.game.Objectives;
 import mindustry.type.Planet;
 
 public class ModPlanet {

@@ -7,6 +7,8 @@ import mindustry.content.*;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
+import mindustry.type.Item;
+import mindustry.type.Planet;
 import mindustry.ui.dialogs.*;
 
 public class ExampleJavaMod extends Mod{
@@ -27,10 +29,32 @@ public class ExampleJavaMod extends Mod{
             });
         });
     }
+    public static Item old_world_Launch_pad;
+    public static TechTree old_world_launch_pad_techtree;
+    public static Planet OldWorld;
+    public static void load(){
+        old_world_Launch_pad = new Item("Old world launch pad"){
+            {
+                hardness = 1;
+                cost = 1;
+            }
+        };
+        old_world_launch_pad_techtree = new TechTree(){
+            {
 
+            }
+        };
+        OldWorld = new Planet("OldWorld", Planets.sun,10,10){
+            {
+                accessible = true;
+                allowLaunchToNumbered = true;
+                visible = true;
+            }
+        };
+    };
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        Log.info("Loading some example example.content.");
     }
 
 }

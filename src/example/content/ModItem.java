@@ -1,6 +1,4 @@
-package content;
-import mindustry.*;
-import mindustry.content.ErekirTechTree;
+package example.content;
 import mindustry.content.Planets;
 import mindustry.content.TechTree;
 import mindustry.type.Item;
@@ -18,18 +16,18 @@ public class ModItem {
 
             }
         };
-        old_world_launch_pad_techtree = new TechTree(){
-            {
-
-            }
-        };
-        OldWorld = new Planet("OldWorld", Planets.sun,10,10){
-            {
-                accessible = true;
-                allowLaunchToNumbered = true;
-                visible = true;
-            }
-        };
+//        old_world_launch_pad_techtree = new TechTree(){
+//            {
+//
+//            }
+//        };
+//        OldWorld = new Planet("OldWorld", Planets.sun,10,10){
+//            {
+//                accessible = true;
+//                allowLaunchToNumbered = true;
+//                visible = true;
+//            }
+//        };
     };
 
 }
