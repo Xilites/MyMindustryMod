@@ -15,6 +15,8 @@ public class ModPlanet {
                 visible = true;
                 parent = Planets.sun;
                 radius = 0.5F;
+                alwaysUnlocked = true;
+                icon = "old_world_LaunchPad";
             }
         };
     }
