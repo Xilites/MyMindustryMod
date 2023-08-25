@@ -11,11 +11,16 @@ import static mindustry.type.ItemStack.with;
 
 public class ModBlocks {
     public static Block Old_World_Core;
-    public static LaunchPad Old_World_Launch_Pad;
+    public static Block Old_World_Launch_Pad;
     public static void load(){
         Old_World_Launch_Pad = new LaunchPad("OldWorldLaunchPad"){
             {
+                requirements(Category.effect, BuildVisibility.editorOnly, with(Items.beryllium, 5));
 
+                alwaysUnlocked = false;
+                health = 10000;
+                itemCapacity = 40000;
+                size = 2;
             }
         };
         Old_World_Core = new CoreBlock("OldWorldCore"){
