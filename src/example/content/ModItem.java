@@ -16,18 +16,6 @@ public class ModItem {
 
             }
         };
-//        old_world_launch_pad_techtree = new TechTree(){
-//            {
-//
-//            }
-//        };
-//        OldWorld = new Planet("OldWorld", Planets.sun,10,10){
-//            {
-//                accessible = true;
-//                allowLaunchToNumbered = true;
-//                visible = true;
-//            }
-//        };
     };
 
 }
