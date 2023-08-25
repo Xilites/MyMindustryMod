@@ -32,8 +32,9 @@ public class ExampleJavaMod extends Mod{
     public void loadContent(){
         Log.info("Loading some example example.content.");
         ModPlanet.load();
-        ModTechTree.load();
         ModBlocks.load();
+        ModTechTree.load();
+
     }
 
 }
