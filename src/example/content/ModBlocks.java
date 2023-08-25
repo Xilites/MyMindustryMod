@@ -13,7 +13,7 @@ public class ModBlocks {
     public static Block Old_World_Core;
     public static Block Old_World_Launch_Pad;
     public static void load(){
-        Old_World_Launch_Pad = new LaunchPad("OldWorldLaunchPad"){
+        Old_World_Launch_Pad = new LaunchPad("ow-launchpad"){
             {
                 requirements(Category.effect, BuildVisibility.editorOnly, with(Items.beryllium, 5));
 
@@ -23,7 +23,7 @@ public class ModBlocks {
                 size = 2;
             }
         };
-        Old_World_Core = new CoreBlock("OldWorldCore"){
+        Old_World_Core = new CoreBlock("ow-core"){
             {
                 requirements(Category.effect, BuildVisibility.editorOnly, with(Items.beryllium, 5));
 
