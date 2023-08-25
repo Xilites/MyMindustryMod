@@ -2,7 +2,9 @@ package example;
 
 import arc.*;
 import arc.util.*;
+import example.content.ModBlocks;
 import example.content.ModPlanet;
+import example.content.ModTechTree;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
@@ -30,7 +32,8 @@ public class ExampleJavaMod extends Mod{
     public void loadContent(){
         Log.info("Loading some example example.content.");
         ModPlanet.load();
-
+        ModTechTree.load();
+        ModBlocks.load();
     }
 
 }
