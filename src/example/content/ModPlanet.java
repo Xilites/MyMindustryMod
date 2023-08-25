@@ -2,6 +2,7 @@ package example.content;
 
 import mindustry.content.Planets;
 import mindustry.content.TechTree;
+import mindustry.graphics.g3d.HexMesh;
 import mindustry.type.Planet;
 import mindustry.content.TechTree.*;
 
@@ -16,7 +17,8 @@ public class ModPlanet {
                 parent = Planets.sun;
                 radius = 0.5F;
                 alwaysUnlocked = true;
-                icon = "old_world_LaunchPad";
+                icon = "old_world_LaunchPad.png";
+                meshLoader = () -> new HexMesh(this,5);
             }
         };
     }
