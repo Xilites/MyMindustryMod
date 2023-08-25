@@ -11,6 +11,7 @@ public class ModPlanet {
                 accessible = true;
                 allowLaunchToNumbered = true;
                 visible = true;
+                parent = Planets.sun;
             }
         };
     }
