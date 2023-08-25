@@ -1,11 +1,15 @@
 package content;
 import mindustry.*;
 import mindustry.content.ErekirTechTree;
+import mindustry.content.Planets;
 import mindustry.content.TechTree;
 import mindustry.type.Item;
+import mindustry.type.Planet;
+
 public class ModItem {
     public static Item old_world_Launch_pad;
     public static TechTree old_world_launch_pad_techtree;
+    public static Planet OldWorld;
     public static void load(){
         old_world_Launch_pad = new Item("Old world launch pad"){
             {
@@ -19,5 +23,13 @@ public class ModItem {
 
             }
         };
+        OldWorld = new Planet("OldWorld", Planets.sun,10,10){
+            {
+                accessible = true;
+                allowLaunchToNumbered = true;
+                visible = true;
+            }
+        };
     };
+
 }
